@@ -1,4 +1,8 @@
 /*sig. da color a los botones*/
+body {
+	color: violet;
+	background-color: #570c83;
+  }
 :root {
 	--primario: #e239d4;
 	--gris-claro: #B8B8B8;

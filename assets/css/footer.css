@@ -1,6 +1,15 @@
 
-
-footer {
+/*.bodyfooter {  /*Si se quita esto se mueve el diseño*/
+    /*display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 100vh;
+   /*  background: #333 */
+   body {
+    color: violet;
+    background-color: #570c83;
+  }
+   footer {
     position: relative;
     width: 100%;
     background: #3586ff;
@@ -9,6 +18,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 100px;
 }
 .logo img{
     width: 130px ;
@@ -24,14 +34,14 @@ footer .menu {  /*iconos*/
     align-items: center;
     margin: 10px 0;
     flex-wrap: wrap;
-    list-style:none
+    list-style:none;
 }
 footer .social_iron li,
 footer .menu li{
     list-style: none; 
 }
 footer .social_icon li a {
-    font-size: 2em;
+    font-size: 1.5em;
     color: #fff;
     margin: 0 10px;
     display: inline-block;
@@ -64,8 +74,8 @@ footer .wave{
     left: 0;
     width: 100%;
     height: 100px;
-    background: url(/imagenes/wave.png);
-    background-size: 1000px 100px;
+    background: url(../../imagenes/wave.png);
+    background-size: 1000px 100px; /*cambia  la posisicion de las ondas*/
 }
 footer .wave#wave1{
     z-index: 1000;
@@ -107,5 +117,6 @@ footer .wave#wave4{
         background-position-x: 1000px;
     }
 }
+
 
 
