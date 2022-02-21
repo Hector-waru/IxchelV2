@@ -1,8 +1,8 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  color: violet;
-  background-color: #570c83;
+  color: #570c83;
+  background-color: white;
 }
 
 * {
