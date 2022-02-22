@@ -16,7 +16,7 @@
   <body>
     
  <!--LOGO NAVB--> 
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
       <a class="navbar-brand" href="index.html">
         <img src="imagenes/logo.png" width="150">
       </a>
@@ -28,27 +28,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active mr-5">
-            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active mr-5">
             <a class="nav-link" href="nosotros.html">Nosotros</a>
           </li>
           <li class="nav-item active mr-5">
             <a class="nav-link" href="contactanos.html">Contáctanos</a>
           </li>
-          <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-              Productos
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="catalogo.html">Arte</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="catalogo.html">Joyería</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">catalogo.html</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="catalogo.html">Calzado</a>
-            </div>
+          <li class="nav-item active mr-5">
+            <a class="nav-link" href="catalogo.html">Catálogo</a>
           </li>
         </ul>
         <form class="d-flex">
@@ -61,8 +47,8 @@
             </li>
           </ul>
           <!--Icono carrito-->
-          <a class="navbar-brand" href="carrito.html">
-              <img src="logo.png" width="100">
+          <a class="navbar-brand nav-item" href="carrito.html">
+              <img src="imagenes/shopping-cart (2).png" width="30">
             </a>
         </form>
       </div>
@@ -74,7 +60,9 @@
 <main role="main">
 <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, maiores.. <span class="text-muted">It’ll blow your mind.</span></h2>
+        <h2 class="featurette-heading index-h2">Un cachito de México para el mundo</h2>
+
+        <h3 class="index-h3 index-h3-cursiva">Adquiere artesanías 100% mexicanas y apoya el desarrollo de comunidades indígenas</h3>
       </div>
   <div id="myCarousel" class="carousel slide col-md-5" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -84,32 +72,31 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label=" :  " preserveAspectRatio="xMidYMid slice" focusable="false"><title> </title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"> </text></svg>
+        <img src="imagenes/huaraches01a.jpg" class="d-block w-100" alt="calzado">
 
         <div class="container">
           <div class="carousel-caption">
-            <h1>ROPA</h1>
-            <p><a class="btn btn-lg btn-primary" href="#">Comprar</a></p>
+            <h1>Calzado</h1>
+            <p><a class="btn btn-lg btn-primary index-btn-carousel" href="#">Comprar</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label=" :  " preserveAspectRatio="xMidYMid slice" focusable="false"><title> </title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"> </text></svg>
+        <img src="imagenes/alebrije01a.jpg" class="d-block w-100" alt="arte">
 
         <div class="container">
           <div class="carousel-caption">
-            <h1>ROPA</h1>
-            <p><a class="btn btn-lg btn-primary" href="#">Comprar</a></p>
+            <h1>Arte</h1>
+            <p><a class="btn btn-lg btn-primary index-btn-carousel" href="#">Comprar</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label=" :  " preserveAspectRatio="xMidYMid slice" focusable="false"><title> </title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"> </text></svg>
-
+        <img src="imagenes/jade01a.jpg" class="d-block w-100" alt="joyería">
         <div class="container">
           <div class="carousel-caption ">
-            <h1>Ropa</h1>
-            <p><a class="btn btn-lg btn-primary" href="#">Comprar</a></p>
+            <h1>Joyería</h1>
+            <p><a class="btn btn-lg btn-primary index-btn-carousel" href="#">Comprar</a></p>
           </div>
         </div>
       </div>
@@ -125,123 +112,98 @@
   </div>
   <!--FinCarouselinicial-->
 
-  <!--Informacióncardsde productos-->
+   <!--Informacióncardsde productos-->
   
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">ALEBRIJES</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">Los alebrijes son de origen.....</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">ALEBRIJES</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">Los alebrijes son de origen.....</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">ALEBRIJES</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">Los alebrijes son de origen.....</p> 
-            </div>
+   <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="imagenes/artesano-about03.jpg" class="d-block w-100 card-img-top" alt="huaraches infantiles de cuero">
+          <div class="card-body">
+            <p class="card-text text-dark">En Oaxaca el barro rojo se elabora en San Marcos Tlapazola donde cerca de la llegada de la Guelaguetza se hace una feria.Las artesanas comienzan yendo a las montañas a extraer el barro rojo para lo cual necesitan permisos gubernamentales.</p>
           </div>
         </div>
       </div>
-      <p><a class="col-md-12 btn btn-lg btn-primary" href="#">Conoce más sobre las comunidades</a></p>
-  <!--Fincard-->
-  <hr class="featurette-divider">
-  <!--Producto personalizado-->
-  <div class="container border border-primary p-3">
-    <h2 class="text-dark text-center">¿Buscas un producto personalizado?</h2>
-    <h2 class="text-dark">Te cotizamos</h2>
-    <p><a class="col-md-12  href="#">ixcheartesanias@gmail.com</a></p>
-</div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="imagenes/artesano-about04.jpg" class="d-block w-100 card-img-top" alt="huaraches infantiles de cuero">
+          <div class="card-body">
+            <p class="card-text text-dark">Los Mazahuas, bordan simbolismos de la esperanza, amor, hambre y muerte; mientras que los Teneek, ubicados en San Luis Potosí, utilizan punto de cruz para sus bordados, en los cuales plasman el árbol de la vida, animales y cruces.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="imagenes/artesano-about05.jpg" class="d-block w-100 card-img-top" alt="huaraches infantiles de cuero">
+          <div class="card-body">
+            <p class="card-text text-dark">Los tejidos en telar de cintura con diseños tradicionales sobre huipiles, han sobresalido por sus diseño en rombos que representan el cosmos, así como iconos de animales cósmicos como la serpiente, sapo, alacrán, entre otros.</p> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <p><a class="col-md-12 btn btn-lg btn-primary" href="nosotros.html">Conoce más sobre las comunidades</a></p>
+<!--Fincard-->
 <hr class="featurette-divider">
-<!--FINpersonalizado-->
 
 <!--Inicioimagenparallaxmapa-->
-<div id="parallax-image">
-  <div class="row h-100"">
-  <div class="col-md-12 aling-seif-center">
-      <h1 class="text-center">Pueblos mágicos</h1>
-      <h5 class="text-light p-3">Comunidades</h5>
-      <p class="text-light p-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Pariatur eaque beatae eveniet! Enim ipsam distinctio odit.<br>
-          , deserunt alias ipsum labore architecto recusandae vero beatae velit, nulla suscipit.
-      </p>
-  </div>
-</div>
-</div>
+      <div id="parallax-image">
+        <div class="row h-100">
+        <div class="col-md-12 aling-seif-center">
+            <h1 class="text-center"></h1>
+            <h5 class="text-light p-3"></h5>
+            <p class="text-light p-5"></p>
+        </div>
+      </div>
+    </div>
 <!--FINimagen-->
 
 <!--Contenedor entre imagenes-->
 <div class="container">
-<h2 class="text-dark text-center">NUEVOS PRODUCTOS</h2>
+<h2 class="text-light text-center">NUEVOS PRODUCTOS</h2>
 <!--Informacióncardsde productos-->
-<div class="container">
+<div class="container index-cards-nuevosproductos">
   <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-4">
       <div class="card mb-3 shadow-sm">
-        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">ALEBRIJES</text></svg>
-
+        <img src="imagenes/huarache-niño01a.jpg" class="d-block w-100 card-img-top" alt="huaraches infantiles de cuero">
         <div class="card-body">
-          <p class="card-text"> Los alebrijes son de origen.....</p>
+          <p class="card-text text-dark">Huaraches infantiles unisex de cuero tono marrón anaranjado</p>
+          <p class="card-text text-dark">$60 USD</p>
            <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary" href="#">Comprar</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary index-btn-cardsnuevoproducto" href="#">Comprar</button>
                   </div>
            </div>
         </div>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4">
       <div class="card mb-3 shadow-sm">
-        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">ALEBRIJES</text></svg>
+        <img src="imagenes/huichol01a.jpg" class="d-block w-100 card-img-top" alt="cráneo de vaca huichol">
 
         <div class="card-body">
-          <p class="card-text">Los alebrijes son de origen.....</p>
+          <p class="card-text text-dark">Cráneo de vaca cubierto con chaquiras de cristal en estilo huichol</p>
+          <p class="card-text text-dark">$500 USD</p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary" href="#">Comprar</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary index-btn-cardsnuevoproducto" href="#">Comprar</button>
               </div>
        </div>
         </div>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4">
       <div class="card mb-3 shadow-sm">
-        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">ALEBRIJES</text></svg>
+        <img src="imagenes/jade01a.jpg" class="d-block w-100 card-img-top" alt="pulsera de jade y cuero">
 
         <div class="card-body">
-          <p class="card-text">Los alebrijes son de origen.....</p>
+          <p class="card-text text-dark">Pulsera con jade verde con grecas talladas y cordón de cuero trenzado</p>
+          <p class="card-text text-dark">$80 USD</p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary" href="#">Comprar</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary index-btn-cardsnuevoproducto" href="#">Comprar</button>
               </div>
        </div> 
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card mb-3 shadow-sm">
-        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">ALEBRIJES</text></svg>
-
-        <div class="card-body">
-          <p class="card-text">Los alebrijes son de origen.....</p>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary" href="#">Comprar</button>
-              </div>
-       </div>
         </div>
       </div>
     </div>
@@ -259,23 +221,20 @@
   <div class="container marketing">
 
     <!-- Por que comprar ixchel -->
-    <h3 class="text-center">¿Por qué comprar en ixchel?</h3>
+    <h3 class="text-center text-light">¿Por qué comprar en Ixchel?</h3>
     <div class="row">
-      <div class="col-lg-4">    
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>PAGO SEGURO</h2>
+      <div class="col-lg-4">
+        <img src="imagenes/online-secure-payment.png" class="mx-auto d-block" width="55%" alt="ícono pago seguro">
+        <h4 class="text-light">Pago seguro</h4>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>ENVIOS ECONOMICOS</h2>
-        
+        <img src="imagenes/travel.png" class="mx-auto d-block" width="60%" alt="ícono envío internacional">
+        <h4 class="text-light">Envíos a todo el mundo</h4>
+         
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-
-        <h2>Apoyo artesanos</h2>
+         <img src="imagenes/teamwork-together.png" class="mx-auto d-block" width="48%" alt="ícono trabajo en equipo">
+        <h4 class="text-light">Comercio justo</h4>
         
       </div><!-- /.col-lg-4 -->
     </div>
@@ -288,70 +247,57 @@
     
 
     <hr class="featurette-divider">
-    <div class="container border border-primary p-3">
-      <h3 class="text-center">¿ERES ARTESANO?</h3>
-      <h3>VENDE CON NOSOTROS Y MUESTRA TU TALENTO AL MUNDO</h3>
+    <div class="container index-vender-carousel">
+      <h3 class="text-center text-light">¿Eres artesano?</h3>
+      <h4 class="text-center text-light">Vende en Ixchel y muestra tu talento al mundo</h4>
       <main role="main">
 
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide col-md-10 mx-auto" data-ride="carousel">
           <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label=" :  " preserveAspectRatio="xMidYMid slice" focusable="false"><title> </title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"> </text></svg>
-      
-              <div class="container">
-                <div class="carousel-caption text-left">
-                  <h1>Promociona tus productos en redes y web</h1>
-                  <p><a class="btn btn-lg btn-primary" href="#">Registate</a></p>
-                </div>
+              <img src="imagenes/artesano-index.jpeg" class="d-block" alt="artesano pintando un jarrón de barro">
+              <div class="carousel-caption">
+                <h5>Promociona tus productos por toda la web</h5>
+                <p><a class="btn btn-lg btn-primary" href="formulario-registro-iniciar-sesion.html">Regístrate</a></p>
               </div>
             </div>
             <div class="carousel-item">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label=" :  " preserveAspectRatio="xMidYMid slice" focusable="false"><title> </title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"> </text></svg>
-      
-              <div class="container">
-                <div class="carousel-caption">
-                  <h1>Nuestros clientes compran tu producto</h1>
-                  <p><a class="btn btn-lg btn-primary" href="#">Regístrate</a></p>
-                </div>
+              <img src="imagenes/clientes-index.jpeg" class="d-block" alt="pareja sonriendo frente a laptop">
+              <div class="carousel-caption">
+                <h5>Personas de todos los rincones del mundo comprando tu producto</h5>
+                <p><a class="btn btn-lg btn-primary" href="formulario-registro-iniciar-sesion.html">Regístrate</a></p>
               </div>
             </div>
             <div class="carousel-item">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label=" :  " preserveAspectRatio="xMidYMid slice" focusable="false"><title> </title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"> </text></svg>
-      
-              <div class="container">
-                <div class="carousel-caption text-right">
-                  <h1>Envía el producto a tu nuevo cliente</h1>
-                  <p><a class="btn btn-lg btn-primary" href="#">Registrate</a></p>
-                </div>
+              <img src="imagenes/envia-index.jpeg" class="d-block" alt="hombre sellando una caja de envío con cinta adhesiva">
+              <div class="carousel-caption">
+                <h5>Envía el producto a tu nuevo cliente</h5>
+                <p><a class="btn btn-lg btn-primary" href="formulario-registro-iniciar-sesion.html">Regístrate</a></p>
               </div>
             </div>
             <div class="carousel-item">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label=" :  " preserveAspectRatio="xMidYMid slice" focusable="false"><title> </title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"> </text></svg>
-      
-              <div class="container">
-                <div class="carousel-caption">
-                  <h1>Recibe tu pago</h1>
-                  <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                </div>
+              <img src="imagenes/pago-index.jpeg" class="d-block" alt="carrito de supermercado miniatura con fajo de billetes junto a laptop">
+              <div class="carousel-caption">
+                <h5>Recibe tu pago</h5>
+                <p><a class="btn btn-lg btn-primary" href="formulario-registro-iniciar-sesion.html">¡Registrarme!</a></p>
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-target="#myCarousel" data-slide="prev">
+          <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-target="#myCarousel" data-slide="next">
+          <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </button>
         </div>
-        <p>¿Tienes dudas sobre como vender con nosotros?<a class="btn btn-lg btn-primary" href="#">AYUDA</a></p></p>
-  
+
 
   </div><!-- /.container -->
 
@@ -360,42 +306,34 @@
 
 </main>
 
-<!--PREGUNTAR COMO ELIMITAR TANTAS LINEAS Y HACER UN ESPACIO-->
-<hr class="featurette-divider footer">
-<hr class="featurette-divider footer">
-<hr class="featurette-divider footer">
-<hr class="featurette-divider footer">
-<hr class="featurette-divider footer">
-<hr class="featurette-divider footer">
-<footer>
-  <div class="waves">
-      <div class="wave" id="wave1"></div>
-      <div class="wave" id="wave2"></div>
-      <div class="wave" id="wave3"></div>
-      <div class="wave" id="wave4"></div>
-
-      <div class="logo">
-          <img src="imagenes/logo.png" alt="">
-      </div>
-
-<ul class="social_icon">
-  <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-  <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-  <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-  <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
-   </ul>
-   <ul class="menu">
-       <li><a href="comunidades.html">Más sobre las comunidades</a></li>
-       <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
-       <li><a href="">Tu cuenta</a></li>
-       <li><a href="formulario-registro-iniciar-sesion.html">Vende con nosotros</a></li>
-   </ul>
-   <p>Generation Equipo Undefined</p>
-</footer>
-
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <!--Aquí termina el footer-->
+<div class="bodyfooter">
+  <footer>
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+  
+        <div class="logo">
+            <img src="imagenes/logo.png" alt="150">
+        </div>
+    
+  <ul class="social_icon">
+    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+    <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+  </ul>
+     <ul class="menu">
+         <li><a href="index.html">Más sobre las comunidades</a></li>
+         <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+         <li><a href="formulario-registro-iniciar-sesion.html">Tu cuenta</a></li>
+         <li><a href="#">Vende con nosotros</a></li>
+     </ul>
+     <p>Generation Equipo Undefined</p>
+     <!-- Cierra div waves -->
+     </div>
+  </footer>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

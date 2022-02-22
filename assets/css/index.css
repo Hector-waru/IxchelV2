@@ -1,14 +1,27 @@
 /* Padding below the footer and lighter body text */
 
-body {
-  color: #5a5a5a;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+body {
+  font-family: "Mukta", sans-serif;
+  background-color: #570c83;
 }
+
+/* Navbar */
+.navbar {
+  background-color: #3586ff;
+  font-family: "Mukta", sans-serif;
+}
+
+.nav-item {
+  font-weight: 600;
+  padding-left: 30px;
+}
+
 /* Carousel base class */
 .carousel {
   margin-bottom: 2rem;
@@ -29,8 +42,34 @@ body {
   left: 0;
   min-width: 100%;
   height: 32rem;
+  max-width: none;
 }
 
+.index-btn-carousel {
+  background-color: #3586ff;
+  border: none;
+  font-weight: 400;
+}
+
+.index-btn-cardsnuevoproducto {
+  background-color: #3586ff;
+  color: white;
+  border-style: none;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.index-cards-nuevosproductos {
+  margin-bottom: 50px;
+}
+
+.index-h5-carouselcaption {
+  margin-bottom: 10px;
+}
 
 /* MARKETING CONTENT */
 
@@ -43,10 +82,9 @@ body {
   font-weight: 400;
 }
 .marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
 }
-
 
 /* Featurettes
 ------------------------- */
@@ -57,11 +95,38 @@ body {
 
 /* Thin out the marketing headings */
 .featurette-heading {
-  font-weight: 300;
+  color: white;
+  font-size: 80px;
+  font-weight: 400;
   line-height: 1;
-  letter-spacing: -.05rem;
+  letter-spacing: -0.05rem;
 }
 
+.index-h2,
+.index-h3 {
+  margin-left: 60px;
+}
+
+.index-h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 300;
+  color: white;
+}
+
+.index-h3-cursiva {
+  font-style: italic;
+}
+
+.index-vende-cards {
+  width: 100%;
+  padding-top: 100%;
+}
+
+.index-vender-carousel {
+  width: 60%;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -77,11 +142,19 @@ body {
   .featurette-heading {
     font-size: 50px;
   }
+
+  .index-vender-carousel {
+    width: 100%;
+  }
 }
 
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
+  }
+
+  .index-vender-carousel {
+    width: 100%;
   }
 }
 
@@ -89,7 +162,7 @@ body {
 
 .bd-placeholder-img {
   font-size: 1.125rem;
-  text-anchor:middle;
+  text-anchor: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -99,6 +172,10 @@ body {
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 1rem;
+  }
+
+  .index-vender-carousel {
+    width: 100%;
   }
 }
 
@@ -121,11 +198,22 @@ body {
 
 /*---Parallaxmapa--*/
 #parallax-image {
-  background-image: url("/IxchelV2/imagenes/pueblosmagicos.jpg");
+  background-image: url("imagenes/artesana-index.jpeg");
   height: 500px;
   margin-bottom: 50px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-
+}
+.container {
+  color: white;
+}
+.registrate {
+  color: black;
+}
+.inicia {
+  color: black;
+}
+.carrito {
+  color: black;
 }
