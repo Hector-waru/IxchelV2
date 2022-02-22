@@ -3,6 +3,11 @@ body {
   background-color: #570c83;
 }
 
+.nav-item {
+  font-weight: 600;
+  padding-left: 30px;
+}
+
 :root {
   --primario: white;
   --gris-claro: black;
@@ -64,8 +69,8 @@ h1 {
   cursor: pointer;
   text-align: center;
   padding: 15px;
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   border-radius: 25%;
   background: #4ddef7d0;
   font-weight: 700;

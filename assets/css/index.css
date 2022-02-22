@@ -115,6 +115,10 @@ body {
   color: white;
 }
 
+.index-h3-cursiva {
+  font-style: italic;
+}
+
 .index-vende-cards {
   width: 100%;
   padding-top: 100%;
