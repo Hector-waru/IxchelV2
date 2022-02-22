@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Estilos CSS Boostrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="seiji.css">
+    <link href="assets/css/index.css" rel="stylesheet">
     <link href="assets/css/footer.css" rel="stylesheet">
        <title>Datos de envío y pago</title>
 </head>
 <body>
   <!--LOGO NAVB--> <!--En nav bg-primary es el que le da color a la navb-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <a class="navbar-brand" href="#">
-      <img src="logo.png" width="150">
+      <img src="imagenes/logo.png" width="150">
     </a>
     <!--FIN LOGO NAVB-->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,28 +24,14 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active mr-5">
-          <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active mr-5">
           <a class="nav-link" href="nosotros.html">Nosotros</a>
         </li>
         <li class="nav-item active mr-5">
           <a class="nav-link" href="contactanos.html">Contáctanos</a>
-        </li>
-        <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-            Productos
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Arte</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Joyería</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Ropa</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Calzado</a>
-          </div>
-        </li>
+        </li>       
+        <li class="nav-item active mr-5">
+          <a class="nav-link" href="catalogo.html">Catálogo</a>
+        </li>       
       </ul>
       <form class="d-flex">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -58,7 +44,7 @@
         </ul>
         <!--Icono carrito-->
         <a class="navbar-brand" href="carrito.html">
-            <img src="logo.png" width="150">
+            <img src="imagenes/shopping-cart (2).png" width="30">
           </a>
       </form>
     </div>
@@ -68,13 +54,13 @@
   <!--Formulario para direccion de entrega-->
     <!--bg-secondary modifica el color de fondo, bg-transparent lo hace transparente-->
   <div class="container bg-white w-50 h-auto mt-3 text-lg-center">
-    <h3 class="text-center">Información de envío y pago</h3>
+    <h2 class="text-center text-dark">Información de envío y pago</h2>
     
         <form class="needs-validation" novalidate>
-            <h4 class="mt-4">Datos de envío</h4>
+            <h4 class="mt-4 text-center text-dark">Datos de envío</h4>
         <div class="form-row mt-4">
           <div class="col-md-12 mb-3">
-            <label for="validationCustom01">Dirección</label>
+            <label for="validationCustom01" class="text-dark">Dirección</label>
             <input type="text" class="form-control" id="validationCustom01" placeholder="Dirección" required>
             <div class="invalid-feedback">
               Introduzca su Dirección
@@ -83,14 +69,15 @@
         </div>
         <div class="form-row">
           <div class="col-md-6 mb-3">
-            <label for="validationCustom03">Estado</label>
+            <label for="validationCustom03" >Estado</label>
+            <label for="validationCustom03" class="text-dark">Estado</label>
             <input type="password" class="form-control" id="validationCustom03" placeholder="Estado" required>
             <div class="invalid-feedback">
               Introduzca el estado de residencia
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <label for="validationCustom03">Ciudad</label>
+            <label for="validationCustom03" class="text-dark">Ciudad</label>
             <input type="password" class="form-control" placeholder="Ciudad" id="validationCustom03" required>
             <div class="invalid-feedback">
               Introduzca la ciudad de residencia
@@ -98,33 +85,35 @@
           </div>
         </div>
         <div class="form-row mt-4">
-            <div class="col-md-6 mb-3">
-              <label for="validationCustom01">Código postal</label>
+            <div class="col-md-12 mb-3">
+              <label for="validationCustom01" class="text-dark">Código postal</label>
               <input type="number" class="form-control align-self-center" id="validationCustom01" placeholder="Código Postal" required>
               <div class="invalid-feedback">
                 Introduzca su Código Postal
               </div>
             </div>
           </div>
-        <button class="btn btn-primary ml-auto" type="submit">Confirmar dirección</button>
-      </form>
+          <div>
+            <button class="btn btn-primary text-center pagodireccion-btn-form" type="submit">Confirmar dirección</button>
+          </div>
+      </form><br>
   </div>
   <!--Aquí termina formulario para datos de envío-->
 
   <!--Comentario, el color se cambia con text-white en lugar de text-black-50 -->
   <div class="text-center text-black-50">
     <br>
-    ¡Estás a un paso de tener tu artesanía!
+    <p class="text-light">¡Estás a un paso de tener tu artesanía!</p>
   </div>
 
   <!--Formulario para pedir datos de pago-->
     <!--bg-white modifica el color de fondo, bg-transparent lo hace transparente-->
     <div class="container bg-white w-50 h-auto mt-3 text-lg-center">
-        <h3 class="text-center mt-4 mb-4">Datos de pago</h2>
+        <h2 class="text-center mt-4 mb-4 text-dark">Datos de pago</h2>
         <form class="needs-validation" novalidate>
             <div class="form-row">
               <div class="col-md-12 mb-3">
-                <label for="validationCustom01">Nombre titular de la tarjeta</label>
+                <label for="validationCustom01" class="text-dark">Nombre titular de la tarjeta</label>
                 <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre titular de la tarjeta" required>
                 <div class="invalid-feedback">
                  Introduzca el nombre titular de la tarjeta
@@ -133,14 +122,14 @@
             </div>
             <div class="form-row">
                 <div class="col-md-6 mb-3">
-                  <label for="validationCustom01">Dígitos de la tarjeta</label>
+                  <label for="validationCustom01" class="text-dark">Dígitos de la tarjeta</label>
                   <input type="number" class="form-control" id="validationCustom01" placeholder="XXXX-XXXX-XXXX-XXXX" required>
                   <div class="invalid-feedback">
                    Introduzca los 16 dígitos de la tarjeta
                   </div>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <label for="validationCustom01">Fecha de vencimiento</label>
+                    <label for="validationCustom01" class="text-dark">Fecha de vencimiento</label>
                     <input type="number" class="form-control" id="validationCustom01" placeholder="MM/AA" required>
                     <div class="invalid-feedback">
                      Introduzca los 16 dígitos de la tarjeta
@@ -148,8 +137,8 @@
                   </div>
               </div>
               <div class="form-row mt-4">
-                <div class="col-md-6 mb-3">
-                  <label for="validationCustom01">CVV</label>
+                <div class="col-md-12 mb-3">
+                  <label for="validationCustom01" class="text-dark">CVV</label>
                   <input type="number" class="form-control align-self-center" id="validationCustom01" placeholder="CVV" required>
                   <div class="invalid-feedback">
                     Introduzca el CVV al reverso de su tarjeta
@@ -157,16 +146,12 @@
                 </div>
               </div>
             <button class="btn btn-primary ml-auto" type="submit">Confirmar pago</button>
-          </form>
+          </form><br>
       </div>
       <!--Aquí termina formulario para pedir información de pago-->
 
 <!--PREGUNTAR COMO ELIMITAR TANTAS LINEAS Y HACER UN ESPACIO-->
-<hr class="featurette-divider footer">
-<hr class="featurette-divider footer">
-<hr class="featurette-divider footer">
-<hr class="featurette-divider footer">
-<hr class="featurette-divider footer">
+
 <hr class="featurette-divider footer">
 <footer>
   <div class="waves">
@@ -184,7 +169,7 @@
   <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
   <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
   <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
-   </ul>
+</ul>
    <ul class="menu">
        <li><a href="#">Más sobre las comunidades</a></li>
        <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
