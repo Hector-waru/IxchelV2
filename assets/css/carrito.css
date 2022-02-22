@@ -1,3 +1,17 @@
+.navar{
+    color: white;
+}
 .carrito{
     border-radius: 10 10px 10 10px;
 }
+
+/* Navbar */
+.navbar {
+    color: white;
+    background-color: #3586ff;
+  }
+  
+  .nav-item {
+    font-weight: 600;
+    padding-left: 30px;
+  }

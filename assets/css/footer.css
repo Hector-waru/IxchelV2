@@ -15,6 +15,7 @@ footer {
   justify-content: center;
   flex-direction: column;
   margin-top: 100px;
+  font-family: 'Mukta', sans-serif;
 }
 .logo img {
   width: 130px;
