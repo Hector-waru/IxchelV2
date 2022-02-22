@@ -2,101 +2,95 @@ body {
   color: black;
   background-color: #570c83;
 }
-     :root {
-      --primario: #e239d4;
-      --gris-claro: #B8B8B8;
-      --sombra: 0 0 13px 0 rgba(34, 173, 228, 0.95);
-    }
-     #parallax-image {
-          background-image: url("/imagenes/fondo.jpg");
-          height: 600px;
-          margin-bottom: 50px;
-          background-attachment: fixed;
-          background-position: center;
-          background-repeat: no-repeat;
 
-      }
-      #parallax-image-1 {
-          background-image: url("/imagenes/fondo2.jpg");
-          height: 150px;
-          margin-bottom: 50px;
-          background-attachment: fixed;
-          background-position: center;
-          background-repeat: no-repeat;
+:root {
+  --primario: white;
+  --gris-claro: black;
+  --sombra: 0 0 13px 0 rgba(34, 173, 228, 0.95);
+}
+#parallax-image {
+  background-image: url("/imagenes/fondo-v2.jpg");
+  height: 300px;
+  margin-bottom: 50px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#parallax-image-1 {
+  background-image: url("/imagenes/fondo-v2.jpg");
+  height: 150px;
+  margin-bottom: 50px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#parallax-image-2 {
+  background-image: url("/imagenes/fondo-v2.jpg");
+  height: 150px;
+  margin-bottom: 50px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#parallax-image-3 {
+  background-image: url("/imagenes/fondo-v2.jpg");
+  height: 150px;
+  margin-bottom: 50px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*opcional*/
 
-      }
-      #parallax-image-2 {
-          background-image: url("/imagenes/artesano.jpg");
-          height: 150px;
-          margin-bottom: 50px;
-          background-attachment: fixed;
-          background-position: center;
-          background-repeat: no-repeat;
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(248, 244, 244);
+  font-size: 50px;
+}
 
-      }
-      #parallax-image-3 {
-        background-image: url("/imagenes/fondo2.jpg");
-        height: 150px;
-        margin-bottom: 50px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
+.card-image {
+  position: relative;
+}
 
-    }
-            /*opcional*/
-      body{
-          background-color: #570c83;
-      }
-      h1{
-      font-family: Arial, Helvetica, sans-serif;
-      color: rgb(248, 244, 244);
-      font-size: 50px;
-  }
-  
-  .card-image {
-    position: relative;
-    
-  }
-  
-  /* ============= Categorias ============= */
+/* ============= Categorias ============= */
 .categorias {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 40px;
-	margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 50px;
 }
 
 .categoria {
-	cursor: pointer;
-	text-align: center;
-	padding: 15px;
+  cursor: pointer;
+  text-align: center;
+  padding: 15px;
   width: 100px;
   height: 100px;
-	border-radius:25%;
-	background: #4ddef7d0;
-	font-weight: 700;
-	color: var(--gris-claro);
-	border: 1px solid transparent;
-	transition: .3s ease all;
+  border-radius: 25%;
+  background: #4ddef7d0;
+  font-weight: 700;
+  color: var(--gris-claro);
+  border: 1px solid transparent;
+  transition: 0.3s ease all;
 }
 
 .categoria:hover {
-	box-shadow: var(--sombra);
-	color: #000;
+  box-shadow: var(--sombra);
+  color: #000;
 }
 
 .categoria:hover path {
-	fill: var(--primario);
+  fill: var(--primario);
 }
 
 .categoria svg {
-	width: 45px;
-	margin-bottom: 10px;
+  width: 45px;
+  margin-bottom: 10px;
 }
 
 .categoria path {
-	fill: var(--gris-claro);
-	transition: .3s ease all;
+  fill: var(--gris-claro);
+  transition: 0.3s ease all;
 }
 
 .img-responsive {
