@@ -1,15 +1,25 @@
 /* Padding below the footer and lighter body text */
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  color: #570c83;
   background-color: white;
 }
 
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+/* Navbar */
+.navbar {
+  background-color: #3586ff;
 }
+
+.nav-item {
+  font-weight: 600;
+  padding-left: 30px;
+}
+
 /* Carousel base class */
 .carousel {
   margin-bottom: 2rem;
@@ -30,8 +40,14 @@ body {
   left: 0;
   min-width: 100%;
   height: 32rem;
+  max-width: none;
 }
 
+.index-btn-carousel {
+  background-color: #3586ff;
+  border: none;
+  font-weight: 400;
+}
 
 /* MARKETING CONTENT */
 
@@ -44,10 +60,9 @@ body {
   font-weight: 400;
 }
 .marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
 }
-
 
 /* Featurettes
 ------------------------- */
@@ -58,11 +73,23 @@ body {
 
 /* Thin out the marketing headings */
 .featurette-heading {
+  font-size: 80px;
   font-weight: 300;
   line-height: 1;
-  letter-spacing: -.05rem;
+  letter-spacing: -0.05rem;
 }
 
+.index-h2,
+.index-h3 {
+  margin-left: 60px;
+}
+
+.index-h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 400;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -90,7 +117,7 @@ body {
 
 .bd-placeholder-img {
   font-size: 1.125rem;
-  text-anchor:middle;
+  text-anchor: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -128,5 +155,4 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-
 }
