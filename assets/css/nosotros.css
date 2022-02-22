@@ -14,7 +14,7 @@ body {
   --sombra: 0 0 13px 0 rgba(34, 173, 228, 0.95);
 }
 #parallax-image {
-  background-image: url("/imagenes/fondo-v2.jpg");
+  background-image: url("imagenes/fondo-v2.jpg");
   height: 300px;
   margin-bottom: 50px;
   background-attachment: fixed;
@@ -22,7 +22,7 @@ body {
   background-repeat: no-repeat;
 }
 #parallax-image-1 {
-  background-image: url("/imagenes/fondo-v2.jpg");
+  background-image: url("imagenes/fondo-v2.jpg");
   height: 150px;
   margin-bottom: 50px;
   background-attachment: fixed;
@@ -30,7 +30,7 @@ body {
   background-repeat: no-repeat;
 }
 #parallax-image-2 {
-  background-image: url("/imagenes/fondo-v2.jpg");
+  background-image: url("imagenes/fondo-v2.jpg");
   height: 150px;
   margin-bottom: 50px;
   background-attachment: fixed;
@@ -38,7 +38,7 @@ body {
   background-repeat: no-repeat;
 }
 #parallax-image-3 {
-  background-image: url("/imagenes/fondo-v2.jpg");
+  background-image: url("imagenes/fondo-v2.jpg");
   height: 150px;
   margin-bottom: 50px;
   background-attachment: fixed;
