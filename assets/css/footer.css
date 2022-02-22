@@ -4,22 +4,6 @@
     align-items: flex-end;
     min-height: 100vh;
    /*  background: #333 */
-<<<<<<< HEAD
-   body {
-    color: violet;
-    background-color: white;
-  }
-   footer {
-    position: relative;
-    width: 100%;
-    background: #3586ff;
-    min-height: 100px;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 100px;
-=======
 
 footer {
   position: relative;
@@ -31,7 +15,7 @@ footer {
   justify-content: center;
   flex-direction: column;
   margin-top: 100px;
->>>>>>> 56beaaaa0417f5fb57f12ecebf29643ca2339a0c
+  font-family: 'Mukta', sans-serif;
 }
 .logo img {
   width: 130px;

@@ -7,16 +7,16 @@
 }
 
 body {
-<<<<<<< HEAD
-  color: black;
-=======
->>>>>>> 56beaaaa0417f5fb57f12ecebf29643ca2339a0c
-  background-color: white;
+  
+  font-family: 'Mukta', sans-serif;
+  background-color: #570c83;
 }
+
 
 /* Navbar */
 .navbar {
   background-color: #3586ff;
+  font-family: 'Mukta', sans-serif;
 }
 
 .nav-item {
@@ -159,4 +159,19 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+}
+.container{
+  color: white;
+}
+.registrate{
+  color: black;
+  
+}
+.inicia {
+  color: black;
+ 
+}
+.carrito{
+  color: black;
+ 
 }
