@@ -1,6 +1,6 @@
 /*cambia el color del borde de los botones*/
 :root {
-	--gradient: linear-gradient(to left top, #db18d2 10%, #893dcf 90%) !important;
+	--gradient: linear-gradient(to left top, #570c83 10%, #570c83 90%) !important;
   }
   
   body {
