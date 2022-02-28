@@ -79,13 +79,22 @@
         <div class="form-group">
           <label for="exampleFormControlInput1">Correo electrónico</label>
           <input type="email" class="form-control w-auto mb-1" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com" required>
+          <div class="invalid-feedback">
+            Introduzca su correo electrónico
+          </div>
           
           <label for="exampleFormControlInput1">Nombre</label>
           <input type="text" class="form-control w-auto" id="exampleFormControlInput1" placeholder="Nombre" required>
+          <div class="invalid-feedback">
+            Introduzca su nombre
+          </div>
         </div>
         <div class="form-group">
           <label for="exampleFormControlTextarea1">Mensaje</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe tu mensaje aquí" required></textarea>
+          <div class="invalid-feedback">
+            Introduzca su mensaje para nosotrxs
+          </div>
         </div>
         <button class="btn btn-primary ml-auto" type="submit">Enviar</button>
       </form>
@@ -119,6 +128,8 @@
      <p>Generation Equipo Undefined</p>
 </footer>
 
+<!--Link para JS de validación-->
+<script src="assets/js/validaciones.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
