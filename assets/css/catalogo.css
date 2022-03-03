@@ -89,17 +89,16 @@
 /* NAVBAR2productos */
 
 .menucatalogo {
-	background-color:#fff; /*COLOR FONDO NAVBAR2*/
+	background-color: linear-gradient(to left top, #a43be0 10%, #57a5d3cc 90%) !important; /*COLOR FONDO NAVBAR2*/
 	width: 100%;
-	position:static;
+	position:flex;
 	top: 0;
 	padding: 5px;
 	z-index: 999;
 	text-align: center;
 	display: flex;
 	justify-content: center;
-	font-family: 'Noto Serif', serif;
-	font-style: italic;
+	font-family: 'Mukta', serif;
 	margin-bottom: 60px;
 }
 
@@ -107,10 +106,10 @@
 	display: inline-block;
 	padding: 10px 30px;
 	font-size: 18px;
-	background-color: #e83eee63; /*COLOR BOTON NAVBAR2*/
+	background: linear-gradient(to left top, #a43be0 10%, #57a5d3cc 90%) !important; /*COLOR BOTON NAVBAR2*/
 	margin: 0 10px;
 	transition: .5s ease all;
-	color:#222;
+	color:rgb(250, 245, 245);
 	text-decoration: none;
 }
 

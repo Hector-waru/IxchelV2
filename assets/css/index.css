@@ -21,6 +21,9 @@ body {
   font-weight: 600;
   padding-left: 30px;
 }
+.card {
+  border-style: none;
+}
 
 /* Carousel base class */
 .carousel {
@@ -198,7 +201,7 @@ body {
 
 /*---Parallaxmapa--*/
 #parallax-image {
-  background-image: url("imagenes/artesana-index.jpeg");
+  background-image: url("/imagenes/artesana-index.jpeg");
   height: 500px;
   margin-bottom: 50px;
   background-attachment: fixed;
@@ -216,4 +219,9 @@ body {
 }
 .carrito {
   color: black;
+}
+
+.btn {
+  background: linear-gradient(to left top, #a43be0 10%, #57a5d3cc 90%) !important;
+  border-style: none;
 }
