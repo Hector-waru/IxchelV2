@@ -14,7 +14,7 @@ body {
   --sombra: 0 0 13px 0 rgba(34, 173, 228, 0.95);
 }
 #parallax-image {
-  background-image: url("imagenes/fondo-v2.jpg");
+  background-image: url("/imagenes/fondo-v2.jpg");
   height: 300px;
   margin-bottom: 50px;
   background-attachment: fixed;
@@ -22,7 +22,7 @@ body {
   background-repeat: no-repeat;
 }
 #parallax-image-1 {
-  background-image: url("imagenes/fondo-v2.jpg");
+  background-image: url("/imagenes/fondo-v2.jpg");
   height: 150px;
   margin-bottom: 50px;
   background-attachment: fixed;
@@ -30,7 +30,7 @@ body {
   background-repeat: no-repeat;
 }
 #parallax-image-2 {
-  background-image: url("imagenes/fondo-v2.jpg");
+  background-image: url("/imagenes/artesaniasmexicana1.jpg");
   height: 150px;
   margin-bottom: 50px;
   background-attachment: fixed;
@@ -38,7 +38,7 @@ body {
   background-repeat: no-repeat;
 }
 #parallax-image-3 {
-  background-image: url("imagenes/fondo-v2.jpg");
+  background-image: url("/imagenes/codigo3.jpg");
   height: 150px;
   margin-bottom: 50px;
   background-attachment: fixed;
@@ -56,6 +56,9 @@ h1 {
 .card-image {
   position: relative;
 }
+.card {
+  border-style: none;
+}
 
 /* ============= Categorias ============= */
 .categorias {
@@ -72,9 +75,9 @@ h1 {
   width: 130px;
   height: 130px;
   border-radius: 25%;
-  background: #4ddef7d0;
+  background: linear-gradient(to left top, #a43be0 10%, #57a5d3cc 90%) !important;;
   font-weight: 700;
-  color: var(--gris-claro);
+  color:antiquewhite;
   border: 1px solid transparent;
   transition: 0.3s ease all;
 }
