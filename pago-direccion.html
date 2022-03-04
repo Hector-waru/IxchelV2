@@ -9,14 +9,15 @@
     <link href="assets/css/index.css" rel="stylesheet">
     <link href="assets/css/footer.css" rel="stylesheet">
     <link href="assets/css/nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/pago-envio.css">
        <title>Datos de envío y pago</title>
       </head>
       <body>
         
      <!--LOGO NAVB--> 
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" id="site-header">
-    <a class="navbar-brand" href="#">
-      <img src="imagenes/logo.png" width="150">
+    <a class="navbar-brand" href="index.html">
+      <img src="imagenes/logo.png" width="100">
     </a>
     <!--FIN LOGO NAVB-->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,7 +46,7 @@
           </li>
         </ul>
         <!--Icono carrito-->
-        <a class="navbar-brand" href="carrito.html">
+        <a class="navbar-brand nav-item" href="carrito.html">
             <img src="imagenes/shopping-cart (2).png" width="30">
           </a>
       </form>
@@ -55,14 +56,14 @@
 
   <!--Formulario para direccion de entrega-->
     <!--bg-secondary modifica el color de fondo, bg-transparent lo hace transparente-->
-  <div class="container bg-white w-50 h-auto mt-3 text-lg-center">
-    <h2 class="text-center text-dark">Información de envío y pago</h2>
+  <div class="container bg-transparent w-50 h-auto mt-3 text-lg-center border border-primary p-3 mt-5">
+    <h2 class="text-center text-white">Información de envío y pago</h2>
     
         <form class="needs-validation" novalidate>
-            <h4 class="mt-4 text-center text-dark">Datos de envío</h4>
+            <h4 class="mt-4 text-center text-white">Datos de envío</h4>
         <div class="form-row mt-4">
           <div class="col-md-12 mb-3">
-            <label for="validationCustom01" class="text-dark">Dirección</label>
+            <label for="validationCustom01" class="text-white">Dirección</label>
             <input type="text" class="form-control" id="validationCustom01" placeholder="Dirección" required>
             <div class="invalid-feedback">
               Introduzca su Dirección
@@ -71,15 +72,14 @@
         </div>
         <div class="form-row">
           <div class="col-md-6 mb-3">
-            <label for="validationCustom03" >Estado</label>
-            <label for="validationCustom03" class="text-dark">Estado</label>
+            <label for="validationCustom03" class="text-white">Estado</label>
             <input type="password" class="form-control" id="validationCustom03" placeholder="Estado" required>
             <div class="invalid-feedback">
               Introduzca el estado de residencia
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <label for="validationCustom03" class="text-dark">Ciudad</label>
+            <label for="validationCustom03" class="text-white">Ciudad</label>
             <input type="password" class="form-control" placeholder="Ciudad" id="validationCustom03" required>
             <div class="invalid-feedback">
               Introduzca la ciudad de residencia
@@ -88,8 +88,8 @@
         </div>
         <div class="form-row mt-4">
             <div class="col-md-12 mb-3">
-              <label for="validationCustom01" class="text-dark">Código postal</label>
-              <input type="number" class="form-control align-self-center" id="validationCustom01" placeholder="Código Postal" required>
+              <label for="validationCustom01" class="text-white">Código postal</label>
+              <input type="number" min="1" class="form-control align-self-center" id="validationCustom01" placeholder="Código Postal" required>
               <div class="invalid-feedback">
                 Introduzca su Código Postal
               </div>
@@ -110,12 +110,12 @@
 
   <!--Formulario para pedir datos de pago-->
     <!--bg-white modifica el color de fondo, bg-transparent lo hace transparente-->
-    <div class="container bg-white w-50 h-auto mt-3 text-lg-center">
-        <h2 class="text-center mt-4 mb-4 text-dark">Datos de pago</h2>
+    <div class="text-white container bg-transparent w-50 h-auto mt-3 text-lg-center border border-primary p-3 mb-5">
+        <h2 class="text-center mt-4 mb-4 text-white">Datos de pago</h2>
         <form class="needs-validation" novalidate>
             <div class="form-row">
               <div class="col-md-12 mb-3">
-                <label for="validationCustom01" class="text-dark">Nombre titular de la tarjeta</label>
+                <label for="validationCustom01" class="text-white">Nombre titular de la tarjeta</label>
                 <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre titular de la tarjeta" required>
                 <div class="invalid-feedback">
                  Introduzca el nombre titular de la tarjeta
@@ -124,14 +124,17 @@
             </div>
             <div class="form-row">
                 <div class="col-md-6 mb-3">
-                  <label for="validationCustom01" class="text-dark">Dígitos de la tarjeta</label>
-                  <input type="number" class="form-control" id="validationCustom01" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+                  <label for="validationCustom01" class="text-white">Dígitos de la tarjeta</label>
+                  <input name="somename"
+        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "16" class="form-control" placeholder="XXXX-XXXX-XXXX-XXXX"/>
+                  
+                  <!--<input type="number" class="form-control" id="validationCustom01" placeholder="XXXX-XXXX-XXXX-XXXX" required>-->
                   <div class="invalid-feedback">
                    Introduzca los 16 dígitos de la tarjeta
                   </div>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <label for="validationCustom01" class="text-dark">Fecha de vencimiento</label>
+                    <label for="validationCustom01" class="text-white">Fecha de vencimiento</label>
                     <input type="number" class="form-control" id="validationCustom01" placeholder="MM/AA" required>
                     <div class="invalid-feedback">
                      Introduzca los 16 dígitos de la tarjeta
@@ -140,8 +143,12 @@
               </div>
               <div class="form-row mt-4">
                 <div class="col-md-12 mb-3">
-                  <label for="validationCustom01" class="text-dark">CVV</label>
-                  <input type="number" class="form-control align-self-center" id="validationCustom01" placeholder="CVV" required>
+                  <label for="validationCustom01" class="text-white">CVV</label>
+                  <input name="somename"
+        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "3" class="form-control" placeholder="CVV"/>
+
+                  
+                  <!--<input type="number" min="1" max="999" class="form-control align-self-center" id="validationCustom01" placeholder="CVV" required>-->
                   <div class="invalid-feedback">
                     Introduzca el CVV al reverso de su tarjeta
                   </div>
@@ -173,10 +180,11 @@
   <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
 </ul>
    <ul class="menu">
-       <li><a href="#">Más sobre las comunidades</a></li>
-       <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
-       <li><a href="comunidades.html">Tu cuenta</a></li>
-       <li><a href="#">Vende con nosotros</a></li>
+    <li><a href="nosotros.html">Más sobre las comunidades</a></li>
+    <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+    <li><a href="formulario-registro-iniciar-sesion.html">Tu cuenta</a></li>
+    <li><a href="formulario-registro-iniciar-sesion.html">Vende con nosotros</a></li>
+    <li><a href="preguntas-frecuentes.html">Ayuda</a></li>
    </ul>
    <p>Generation Equipo Undefined</p>
    </div>
