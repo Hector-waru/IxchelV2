@@ -124,10 +124,8 @@
             </div>
             <div class="form-row">
                 <div class="col-md-6 mb-3">
-                  <label for="validationCustom01" class="text-white">Dígitos de la tarjeta</label>
-                  <input name="somename"
-        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "16" class="form-control" placeholder="XXXX-XXXX-XXXX-XXXX"/>
-                  
+                  <label for="validationCustom03" class="text-white">Dígitos de la tarjeta</label>
+                  <input type="number" min="1" maxlength="16" class="form-control align-self-center" id="validationCustom01" placeholder="XXXX-XXXX-XXXX-XXXX" required>
                   <!--<input type="number" class="form-control" id="validationCustom01" placeholder="XXXX-XXXX-XXXX-XXXX" required>-->
                   <div class="invalid-feedback">
                    Introduzca los 16 dígitos de la tarjeta
@@ -137,15 +135,14 @@
                     <label for="validationCustom01" class="text-white">Fecha de vencimiento</label>
                     <input type="number" class="form-control" id="validationCustom01" placeholder="MM/AA" required>
                     <div class="invalid-feedback">
-                     Introduzca los 16 dígitos de la tarjeta
+                     Introduzca la fecha de vencimiento
                     </div>
                   </div>
               </div>
               <div class="form-row mt-4">
                 <div class="col-md-12 mb-3">
                   <label for="validationCustom01" class="text-white">CVV</label>
-                  <input name="somename"
-        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "3" class="form-control" placeholder="CVV"/>
+                  <input type="number" min="1" class="form-control align-self-center" id="validationCustom01" placeholder="CVV" required>
 
                   
                   <!--<input type="number" min="1" max="999" class="form-control align-self-center" id="validationCustom01" placeholder="CVV" required>-->
