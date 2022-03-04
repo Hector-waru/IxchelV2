@@ -9,16 +9,28 @@ body {
   --sombra: 0 0 13px 0 rgba(34, 173, 228, 0.95);
 }
 
+/* Navbar */
+.navbar {
+  background-color: #3586ff;
+  font-family: "Mukta", sans-serif;
+}
+
+.nav-item {
+  font-weight: 600;
+  padding-left: 30px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+
+
 /*Color de body para modificar Rox*/
 body {
   background-color: #570c83;
-  font-family: "Roboto", sans-serif;
 }
 
 main {

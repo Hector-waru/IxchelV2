@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <link href="assets/css/nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/pago-envio.css">
   
        <title>Registro</title>
       </head>
@@ -57,8 +58,8 @@
 
   <!--Formulario para registro-->
     <!--bg-secondary modifica el color de fondo, bg-transparent lo hace transparente-->
-  <div class=" registrate container bg-white w-50 h-auto mt-5 text-lg-center">
-    <h3 class="text-center">Regístrate</h3>
+  <div class=" text-white registrate container bg-transparent w-50 h-auto mt-5 text-lg-center border border-primary p-3">
+    <h3 class="text-center text-white">Regístrate</h3>
     <form class="needs-validation" novalidate>
         <div class="form-row mt-3">
           <div class="col-md-6 mb-3">
@@ -79,14 +80,14 @@
         <div class="form-row">
           <div class="col-md-6 mb-3">
             <label for="validationCustom03">Contraseña</label>
-            <input type="password" class="form-control" id="validationCustom03" placeholder="Contraseña" required>
+            <input type="password" minlength="5" class="form-control" id="validationCustom03" placeholder="Contraseña" required>
             <div class="invalid-feedback">
               Introduzca una contraseña
             </div>
           </div>
           <div class="col-md-6 mb-3">
             <label for="validationCustom03">Confirmar Contraseña</label>
-            <input type="password" class="form-control" placeholder="Confirma contraseña" id="validationCustom03" required>
+            <input type="password" minlength="5" class="form-control" placeholder="Confirma contraseña" id="validationCustom03" required>
             <div class="invalid-feedback">
               Confirme su contraseña
             </div>
@@ -107,7 +108,7 @@
 
   <!--Formulario para iniciar sesión-->
     <!--bg-secondary modifica el color de fondo, bg-transparent lo hace transparente-->
-    <div class="inicia container bg-white w-50 h-auto mt-3 text-lg-center">
+    <div class="text-white inicia container bg-transparent w-50 h-auto mt-3 text-lg-center border border-primary p-3">
         <h3 class="text-center">Inicia Sesión</h3>
         <form class="needs-validation" novalidate>
             <div class="form-row">
@@ -120,7 +121,7 @@
               </div>
               <div class="col-md-6 mb-3">
                 <label for="validationCustom02">Contraseña</label>
-                <input type="password" class="form-control" id="validationCustom02" placeholder="Contraseña" required>
+                <input type="password" minlength="5" class="form-control" id="validationCustom02" placeholder="Contraseña" required>
                 <div class="invalid-feedback">
                   Introduzca su contraseña
                 </div>
@@ -173,11 +174,11 @@
           <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
            </ul>
            <ul class="menu">
-               <li><a href="#">Más sobre las comunidades</a></li>
-               <li><a href="#">Preguntas frecuentes</a></li>
-               <li><a href="#">Tu cuenta</a></li>
-               <li><a href="#">Vende con nosotros</a></li>
-               <li><a href="#">Ayuda</a></li>
+            <li><a href="nosotros.html">Más sobre las comunidades</a></li>
+            <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+            <li><a href="formulario-registro-iniciar-sesion.html">Tu cuenta</a></li>
+            <li><a href="formulario-registro-iniciar-sesion.html">Vende con nosotros</a></li>
+            <li><a href="preguntas-frecuentes.html">Ayuda</a></li>
            </ul>
            <p>Generation Equipo Undefined</p>
       </footer>

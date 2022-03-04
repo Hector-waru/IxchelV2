@@ -1,11 +1,13 @@
 body {
   color: black;
   background-color: #570c83;
+  font-family: "Mukta", sans-serif;
 }
 
 .nav-item {
   font-weight: 600;
   padding-left: 30px;
+  font-family: "Mukta", sans-serif;
 }
 
 :root {
